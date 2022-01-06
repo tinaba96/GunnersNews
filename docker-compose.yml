@@ -1,0 +1,16 @@
+version: "3"
+services:
+  react_native:
+    build: ./docker/react_native
+    volumes:
+      - ./react_native/:/usr/src/app
+    tty: true
+    stdin_open: true
+    environment:
+      - REACT_NATIVE_PACKAGER_HOSTNAME=${REACT_NATIVE_PACKAGER_HOSTNAME}
+      - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0 
+    command: yarn start
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
