@@ -1,6 +1,6 @@
-# fnews
+# GunnersNews
 
-This is an app where people can filiter out the news which you are interested in. You can custom you favourte keyword to get the releated news from other news website. You don't have to spend time looking at a news article which you are not interested in and you can also share your favourite news with others.
+This is an app where users can find news about Arsenal FC. Users can also keep their favourite articles so that they are always available to read it. In addition, not only the Japanese articles but also articles from around the world are available. Enjoy! 
 
 ## Instructions
 
