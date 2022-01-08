@@ -5,10 +5,7 @@ import Loading from '../components/Loading';
 import Constants from 'expo-constants';
 import axios from 'axios';
 
-
-
 const URL = `https://newsapi.org/v2/everything?q=アーセナル&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
-
 
 
 export default HomeScreen = ({navigation}) => {
@@ -59,32 +56,38 @@ export default HomeScreen = ({navigation}) => {
 
   const onPressJP = () => {
     const URL = `https://newsapi.org/v2/everything?q=アーセナル&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
+    pageRef.current = 1
     const jp = async (page) => {
       setLoading(true)
       try {
-        const response = await axios.get(`${URL}&page=${page}`);
+        const response = await axios.get(`${URL}&page=1`);
         setArticles(response.data.articles)
       } catch (error) {
         console.error(error)
       }
       setLoading(false)
   }
+  onRefresh()
   jp()
+  onRefresh()
   }
 
   const onPressOversees = () => {
     const URL = `https://newsapi.org/v2/everything?q=arsenal&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
+    pageRef.current = 1
     const ovs = async (page) => {
       setLoading(true)
       try {
-        const response = await axios.get(`${URL}&page=${page}`);
+        const response = await axios.get(`${URL}&page=1`);
         setArticles(response.data.articles)
       } catch (error) {
         console.error(error)
       }
       setLoading(false)
   }
+  onRefresh()
   ovs()
+  onRefresh()
   }
 
   return (
@@ -157,6 +160,7 @@ const styles = StyleSheet.create({
   buttonAll:{
     flexDirection: 'row',
     justifyContent: 'space-evenly',
+    marginBottom: 5,
   },
   button:{
     paddingRight: 20,
@@ -173,5 +177,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     marginBottom: 10,
+    justifyContent: 'center',
   },
 });
