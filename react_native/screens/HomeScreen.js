@@ -5,7 +5,8 @@ import Loading from '../components/Loading';
 import Constants from 'expo-constants';
 import axios from 'axios';
 
-const URL = `https://newsapi.org/v2/everything?q=アーセナル&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
+arsenal = 'アーセナル'
+const URL = `https://newsapi.org/v2/everything?q=${arsenal}&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
 
 
 export default HomeScreen = ({navigation}) => {
@@ -23,6 +24,7 @@ export default HomeScreen = ({navigation}) => {
   }, []);
 
   const fetchArticles = async (page) => {
+  const URL = `https://newsapi.org/v2/everything?q=${arsenal}&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
     try {
       const response = await axios.get(`${URL}&page=${page}`);
       if ( response.data.articles.length > 0){
@@ -55,7 +57,8 @@ export default HomeScreen = ({navigation}) => {
 
 
   const onPressJP = () => {
-    const URL = `https://newsapi.org/v2/everything?q=アーセナル&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
+    arsenal = 'アーセナル'
+    const URL = `https://newsapi.org/v2/everything?q=${arsenal}&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
     pageRef.current = 1
     const jp = async (page) => {
       setLoading(true)
@@ -67,13 +70,17 @@ export default HomeScreen = ({navigation}) => {
       }
       setLoading(false)
   }
-  onRefresh()
   jp()
-  onRefresh()
+  setRefreshing(true)
+  setArticles([])
+  pageRef.current = 1
+  fetchedAllRef.current = false
+  setRefreshing(false)
   }
 
   const onPressOversees = () => {
-    const URL = `https://newsapi.org/v2/everything?q=arsenal&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
+    arsenal = 'arsenal'
+    const URL = `https://newsapi.org/v2/everything?q=${arsenal}&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`
     pageRef.current = 1
     const ovs = async (page) => {
       setLoading(true)
@@ -85,9 +92,12 @@ export default HomeScreen = ({navigation}) => {
       }
       setLoading(false)
   }
-  onRefresh()
   ovs()
-  onRefresh()
+  setRefreshing(true)
+  setArticles([])
+  pageRef.current = 1
+  fetchedAllRef.current = false
+  setRefreshing(false)
   }
 
   return (
