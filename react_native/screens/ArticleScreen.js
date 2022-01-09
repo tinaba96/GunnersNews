@@ -85,6 +85,11 @@ export default ArticleScreen = ({route}) => {
     }
     }
 
+    bannerError = () => {
+        console.log("Ad Fail error")
+    } 
+    
+
     return (
         <SafeAreaView style = {styles.container } >
             <View  style = {styles.button }>
