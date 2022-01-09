@@ -1410,6 +1410,13 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.11.tgz#2f4c6e10bee0786abff4604e39a37ded6f3980ce"
   integrity sha512-rQfMIGSR/1r/SyN87+VD8xHHzDYeHaJq6elOSCAD+0iLagXkSI2pfA0LmSXP21uw5i3em7GkkRjfJ8wpqWXZNw==
 
+"@react-native-community/push-notification-ios@^1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/push-notification-ios/-/push-notification-ios-1.10.1.tgz#d52a6d69ac1112df0f79e1d17978077629b76784"
+  integrity sha512-k6bZWUKLif4GjenyTD3aQLwA2VT3bNmt22INO/34lexnpmqkPDZF7nreqbckTHG0Zso9wDTe4N/AZJUC/d8iRg==
+  dependencies:
+    invariant "^2.2.4"
+
 "@react-native/assets@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@react-native/assets/-/assets-1.0.0.tgz#c6f9bf63d274bafc8e970628de24986b30a55c8e"
@@ -2572,6 +2579,13 @@ expand-brackets@^2.1.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+expo-ads-admob@~12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/expo-ads-admob/-/expo-ads-admob-12.0.0.tgz#0504fdbdf23e7ae0a65c5604dd81f2bb741a7160"
+  integrity sha512-wJsq5eM4MHbra2gqj8QPO6nPiGtwdgC5Lb0DdEZa7aEKFnr74xTUxfuf2CxhgzTk2F6N+PmmN9udfywilz+Kkg==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
 
 expo-application@~4.0.1:
   version "4.0.1"
@@ -4589,6 +4603,11 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-dropdown-picker@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-dropdown-picker/-/react-native-dropdown-picker-5.3.0.tgz#a1043890846e07a197ed882ff922299b46dd4a7a"
+  integrity sha512-LUctVMAWiDir1X0WrFX1784psvqzBXRxRujYbvlvKz1Owa6cujrVN98rP356hIXFzX19E7SkbA942fGfMvoEWQ==
+
 react-native-gesture-handler@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.1.0.tgz#be7a83a7bd340a2316551a4d30d7abf06b46c1da"
@@ -4599,6 +4618,11 @@ react-native-gesture-handler@~2.1.0:
     invariant "^2.2.4"
     lodash "^4.17.21"
     prop-types "^15.7.2"
+
+react-native-push-notification@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-push-notification/-/react-native-push-notification-8.1.1.tgz#a41d20c70ea5a7709417e96261b225461f8dc73a"
+  integrity sha512-XpBtG/w+a6WXTxu6l1dNYyTiHnbgnvjoc3KxPTxYkaIABRmvuJZkFxqruyGvfCw7ELAlZEAJO+dthdTabCe1XA==
 
 react-native-reanimated@~2.3.1:
   version "2.3.1"
@@ -4639,10 +4663,10 @@ react-native-web@0.17.1:
     normalize-css-color "^1.0.2"
     prop-types "^15.6.0"
 
-react-native-webview@11.15.0:
-  version "11.15.0"
-  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.15.0.tgz#b5aea9da579ca17fb9fd324e5202b1b5b8ce9fa8"
-  integrity sha512-0Wv+8qu8XuACx1xZwzc2Yfl+rOvxUouLcPxUKdkhaMVNpwoM5/ePpczCQZ3LpiRnSoEtjaUkfyQHbJQ+x4dDJQ==
+react-native-webview@^11.15.0:
+  version "11.16.0"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.16.0.tgz#51dce13480aa4f8f727307df05b8bfaf74ca3d14"
+  integrity sha512-yap3dO3adMQp4z5oDzlcgcv6XPsfHAtt1E3ort94GthrunswaZhL6AfMiDOsNnKQmlUA+o4LNJsnlAy1b10rUg==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"

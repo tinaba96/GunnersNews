@@ -3,6 +3,9 @@
     "name": "GunnersNews",
     "slug": "gunnersnews",
     "version": "1.0.0",
+    "privacy": "public",
+    "sdkVersion": "44.0.0",
+    "platforms": ["ios", "android", "web" ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,14 +20,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.company.gunnersnews",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4457266038892094~7034306932"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.tinaba.fnews"
+      "package": "com.tinaba.fnews",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-4457266038892094~8436702728"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
