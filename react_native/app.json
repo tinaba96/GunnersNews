@@ -2,10 +2,14 @@
   "expo": {
     "name": "GunnersNews",
     "slug": "gunnersnews",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "privacy": "public",
     "sdkVersion": "44.0.0",
-    "platforms": ["ios", "android", "web" ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
