@@ -27,3 +27,4 @@ This is an app where users can find news about Arsenal FC. Users can also keep t
 
 1. Read the QR code with your device
 
+- [demo](https://drive.google.com/file/d/1Y0vQks-ye0XptX3zRuvILqhocVZ4QbWR/view?usp=sharing)
