@@ -1,6 +1,23 @@
 # GunnersNews
 
+## Overview
 This is an app where users can find news about Arsenal FC. Users can also keep their favourite articles so that they are always available to read it. In addition, not only the Japanese articles but also articles from around the world are available. Enjoy! 
+
+## Background & Objectives
+Although there are a lot of apps that are specialized in specific team, most of them have too much functionalities and sometimes it is hard to use specially for users who are not familiar with a mobile app. Therefore I developed a mobile app which is simple to use.
+
+## Approach
+This app contains following functions:
+- able to see the updated articles
+- load more articles when users scoll down
+- Sharing function via SNS
+- able to save articles using local storage.
+- open by a browser
+
+
+## Result & Conclusion
+This app was published in App Store for a year and almost 30 users have downloaded this app.
+
 
 ## Instructions
 
