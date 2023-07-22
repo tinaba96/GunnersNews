@@ -10,9 +10,9 @@ Although there are a lot of apps that are specialized in specific team, most of 
 This app contains following functions:
 - able to see the updated articles
 - load more articles when users scoll down
-- Sharing function via SNS
+- sharing function via SNS
 - able to save articles using local storage.
-- open by a browser
+- able to open by a browser
 
 
 ## Result & Conclusion
