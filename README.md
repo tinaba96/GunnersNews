@@ -18,6 +18,7 @@ This app contains following functions:
 ## Result & Conclusion
 This app was published in App Store for a year and almost 30 users have downloaded this app.
 
+- - -
 
 ## Instructions
 
